@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "huslter_backend": {
+      "build": "python -m kybra huster_backend src/huster_backend/src/main.py",
+      "candid": "src/huster_backend/huster_backend.did",
+      "gzip": true,
+      "tech_stack": {
+        "cdk": {
+          "kybra": {}
+        },
+        "language": {
+          "python": {}
+        }
+      },
+      "type": "custom",
+      "wasm": ".kybra/huster_backend/huster_backend.wasm"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
